@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claim", "Claim\Claim.csproj", "{27D1A41C-138E-471A-9962-3CBF07A9C837}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceLayer", "ServiceLayer", "{A30C414C-3FBA-4516-9F7F-261B99B2A108}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer", "{D76981F8-A463-4037-8858-3D6FCCEE60D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewLayer", "ViewLayer", "{30175D5D-1292-4BA9-9D0A-524467A21CBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{85754763-AE58-463E-9B9B-283E15C36764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{FEEC3833-5353-4889-9E41-7CC47C828CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDomain", "AuthDomain\AuthDomain.csproj", "{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{7A4D67E3-B98A-42AA-B572-B2D303294F2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27D1A41C-138E-471A-9962-3CBF07A9C837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D1A41C-138E-471A-9962-3CBF07A9C837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D1A41C-138E-471A-9962-3CBF07A9C837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D1A41C-138E-471A-9962-3CBF07A9C837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEEC3833-5353-4889-9E41-7CC47C828CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEC3833-5353-4889-9E41-7CC47C828CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEC3833-5353-4889-9E41-7CC47C828CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEC3833-5353-4889-9E41-7CC47C828CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27D1A41C-138E-471A-9962-3CBF07A9C837} = {30175D5D-1292-4BA9-9D0A-524467A21CBB}
+		{FEEC3833-5353-4889-9E41-7CC47C828CEB} = {A30C414C-3FBA-4516-9F7F-261B99B2A108}
+		{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46} = {D76981F8-A463-4037-8858-3D6FCCEE60D2}
+		{7A4D67E3-B98A-42AA-B572-B2D303294F2D} = {85754763-AE58-463E-9B9B-283E15C36764}
+	EndGlobalSection
+EndGlobal
