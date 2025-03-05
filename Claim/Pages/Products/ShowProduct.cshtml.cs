@@ -17,7 +17,7 @@ public class ShowProductModel : PageModel
 
     public List<CardProductDTO> Elements { get; set; }
 
-    public void OnGet(int start, int count)
+    public void OnGet(int start = 1, int count = 3)
     {
         Elements = _getProductQueryService.Execute(new SearchCardProduct() { Start = start - 1, Count = count });
 
