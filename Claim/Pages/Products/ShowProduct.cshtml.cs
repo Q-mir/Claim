@@ -15,6 +15,7 @@ public class ShowProductModel : PageModel
         _getProductQueryService = getProductQueryService;
     }
 
+    [BindProperty]
     public List<CardProductDTO> Elements { get; set; }
 
     public void OnGet(int start = 1, int count = 3)
