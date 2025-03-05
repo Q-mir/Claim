@@ -30,6 +30,7 @@ namespace Data
                 User user = new User();
                 user.Login = login;
                 user.Rules = client.Roles.Select(row => row.Value).ToList();
+                return user;
             }
             return null;
         }

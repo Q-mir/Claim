@@ -3,6 +3,11 @@ using AuthDomain.Querys;
 using AuthDomain.Querys.Object;
 using Data;
 using Microsoft.EntityFrameworkCore;
+using ProductDomain;
+using ProductDomain.Commands;
+using ProductDomain.Commands.Object;
+using ProductDomain.Querys;
+using ProductDomain.Querys.Objects;
 using Service;
 using System.Security.Claims;
 
@@ -17,6 +22,16 @@ builder.Services.AddScoped <IQueryService<EntryDTO, User?>, AuthenticationQueryS
 builder.Services.AddScoped <IQueryService<User, ClaimsPrincipal>, CreatePrincipleQueryService>();
 builder.Services.AddScoped <IQueryService<RegistrationDTO, User>, RegistrationUserQueryService>();
 
+builder.Services.AddScoped <IQueryService<SaveFiles, List<string>>, SaveFileOnWWWRoot>();
+builder.Services.AddScoped <IQueryService<SaveFiles, List<string>>, SaveFileOnWWWRoot>();
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICommandService<AddProductDTO>, AddProductCommandService>();
+
+builder.Services.AddScoped<IQueryService<SearchCardProduct, List<CardProductDTO>>, SearchCardProductQueryService>();
+
+
+
 builder.Services.AddAuthentication("Cookies")
                 .AddCookie("Cookies", option =>
                 {
@@ -26,12 +41,12 @@ builder.Services.AddAuthentication("Cookies")
 
 builder.Services.AddAuthorization(option =>
                                   option.AddPolicy("Authorization",
-                                                      policy => { policy.RequireClaim("rule", "User"); }));
+                                                      policy => { policy.RequireClaim("role", "User"); }));
 
 var app = builder.Build();
 app.UseRouting();
 app.UseStaticFiles();
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 app.MapRazorPages();
 app.Run();

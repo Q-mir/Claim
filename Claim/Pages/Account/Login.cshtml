@@ -1,0 +1,13 @@
+﻿@page
+@model Claim.Pages.Account.LoginModel
+@{
+    Layout = "_Layout";
+}
+
+<h1>Login</h1>
+
+<form>
+    <input asp-for="@Model.Input.Login" />
+    <input asp-for="@Model.Input.Password" />
+    <input type="submit" value="Вход"/>
+</form>

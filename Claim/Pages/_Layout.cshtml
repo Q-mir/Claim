@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a asp-page="/Index">Index</a></li>
+            <li><a asp-page="/Account/Registration">Registration</a></li>
+            @if(User.HasClaim("role", "User"))
+            {
+                <li><a asp-page="/Page1">Authorization Page</a></li>
+                <li><a asp-page="/Account/Logout">Exit</a></li>
+            }
+            else
+            {
+                <li><a asp-page="/Account/Login">Login</a></li>
+            }
+            <li><a asp-page="/Products/AddProduct">Add Product</a></li>
+        </ul>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

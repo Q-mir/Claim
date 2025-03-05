@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claim", "Claim\Claim.csproj", "{27D1A41C-138E-471A-9962-3CBF07A9C837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Claim", "Claim\Claim.csproj", "{27D1A41C-138E-471A-9962-3CBF07A9C837}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceLayer", "ServiceLayer", "{A30C414C-3FBA-4516-9F7F-261B99B2A108}"
 EndProject
@@ -13,11 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewLayer", "ViewLayer", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLayer", "DataLayer", "{85754763-AE58-463E-9B9B-283E15C36764}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{FEEC3833-5353-4889-9E41-7CC47C828CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{FEEC3833-5353-4889-9E41-7CC47C828CEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDomain", "AuthDomain\AuthDomain.csproj", "{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthDomain", "AuthDomain\AuthDomain.csproj", "{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{7A4D67E3-B98A-42AA-B572-B2D303294F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{7A4D67E3-B98A-42AA-B572-B2D303294F2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductDomain", "FileDomain\ProductDomain.csproj", "{E6B7EA63-2547-455B-B8CF-2E79F0AA797A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A4D67E3-B98A-42AA-B572-B2D303294F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B7EA63-2547-455B-B8CF-2E79F0AA797A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B7EA63-2547-455B-B8CF-2E79F0AA797A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B7EA63-2547-455B-B8CF-2E79F0AA797A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B7EA63-2547-455B-B8CF-2E79F0AA797A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +56,6 @@ Global
 		{FEEC3833-5353-4889-9E41-7CC47C828CEB} = {A30C414C-3FBA-4516-9F7F-261B99B2A108}
 		{97B4F1DD-323E-4D48-B23E-32E2FE0A2F46} = {D76981F8-A463-4037-8858-3D6FCCEE60D2}
 		{7A4D67E3-B98A-42AA-B572-B2D303294F2D} = {85754763-AE58-463E-9B9B-283E15C36764}
+		{E6B7EA63-2547-455B-B8CF-2E79F0AA797A} = {D76981F8-A463-4037-8858-3D6FCCEE60D2}
 	EndGlobalSection
 EndGlobal

@@ -15,7 +15,7 @@ namespace AuthDomain.Querys
 
         public User? Execute(RegistrationDTO obj)
         {
-            if(obj == null || obj.Password.Equals(obj.PasswordAgain)) return null;
+            if(obj == null || !obj.Password.Equals(obj.PasswordAgain)) return null;
 
             return _authRepository.Registration(obj.Name, obj.Password);
         }

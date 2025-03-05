@@ -11,10 +11,10 @@ namespace AuthDomain.Querys
             ICollection<Claim> claims = new List<Claim>();
             foreach (var item in obj.Rules)
             {
-                Claim claim = new("role", item);
-                claims.Add(claim);
+                claims.Add(new("role", item));
             }
             var identity = new ClaimsIdentity(claims, "RulesClaim", ClaimTypes.Name, ClaimTypes.Role);
+
             return new ClaimsPrincipal(identity);
         }
     }

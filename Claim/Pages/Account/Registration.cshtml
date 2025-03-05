@@ -1,0 +1,18 @@
+﻿@page
+@model Claim.Pages.Account.RegistrationModel
+@{
+    Layout = "_Layout";
+}
+
+<form asp-page="/Account/Registration">
+    <div asp-validation-summary="All"></div>
+    <label>Login</label>
+    <input asp-for="@Model.Input.Name" />
+    <label>Password</label>
+    <input asp-for="@Model.Input.Password" />
+    <label>Password Again</label>
+    <input asp-for="@Model.Input.PasswordAgain" />
+    <input type="submit" value="Registration" />
+</form>
+
+

@@ -1,0 +1,20 @@
+﻿@page "/Show/Product/{start=1:int}/{count=3:int}"
+@model Claim.Pages.Products.ShowProductModel
+@{
+    Layout = "_Layout";
+}
+
+<h1>Show PRODUCT</h1>
+
+@if(Model.Elements != null)
+{
+    @foreach(var card in Model.Elements)
+    {
+        <div class="card" syle="width:18rem;">
+            <img src="~/images/@card.ImagePath" class="card-img-top" alt="productimage"/>
+            <div class="card-body">
+                <h5 class="card-title">@card.Name</h5>
+            </div>
+        </div>    
+    }
+}

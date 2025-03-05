@@ -1,0 +1,34 @@
+﻿@page "/Add/Product"
+@model Claim.Pages.Products.AddProductModel
+@{
+    Layout = "_Layout";
+}
+
+<form asp-page="/Products/AddProduct" enctype="multipart/form-data">
+    <div asp-validation-summary="All"></div>
+    <div class="input-group mb-3">
+        <label asp-for="@Model.Input.Name" class="input-group-text"></label>
+        <input asp-for="@Model.Input.Name" class="form-control">
+    </div>
+
+    <div class="input-group mb-3">
+        <label asp-for="@Model.Input.Price" class="input-group-text"></label>
+        <input asp-for="@Model.Input.Price" class="form-control">
+    </div>
+
+    <div class="input-group mb-3">
+        <label asp-for="@Model.Input.Count" class="input-group-text"></label>
+        <input asp-for="@Model.Input.Count" class="form-control">
+    </div>
+
+    <div class="input-group mb-3">
+        <textarea asp-for="@Model.Input.Description" id="floatingTextarea" class="form-control"></textarea>
+        <label for="floatingTextarea" class="form-control"></label>
+    </div>
+
+    <div class="input-group mb-3">
+        <input multiple type="file" asp-for="@Model.FormFiles" />
+    </div>
+
+    <input type="submit" value="Добавить" />
+</form>
